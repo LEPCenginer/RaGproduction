@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claro Colombia - Soluciones en Telecomunicaciones</title>
+  <meta name="description" content="Servicios de internet, telefonía móvil, TV y soluciones empresariales en Colombia." />
+  
+  <style>
+    :root{--accent:#e10600;--dark:#222;--muted:#666;--card:#fff}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#f4f6f8;color:var(--dark)}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{background:linear-gradient(90deg,#fff 0%,#fff0 100%);position:sticky;top:0;z-index:10;border-bottom:1px solid #eee}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{height:40px;width:auto}
+    nav ul{list-style:none;display:flex;gap:16px;margin:0;padding:0}
+    nav a{color:var(--dark);text-decoration:none;font-weight:600}
+    .cta{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center;padding:36px 0}
+    .hero h1{font-size:2.1rem;margin:0 0 8px}
+    .hero p{color:var(--muted);margin:0 0 16px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 20px rgba(16,24,40,0.06)}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:18px}
+    .feature{padding:12px;border-radius:10px}
+    .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:18px}
+    .plan{padding:16px;border-radius:10px;border:1px solid #eee;background:#fff}
+    .plan h3{margin:0 0 8px}
+    .price{font-size:1.6rem;color:var(--accent);font-weight:700}
+    .contact{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+    form label{display:block;font-size:0.95rem;margin-bottom:6px}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #ddd;font-size:0.95rem}
+    button{background:var(--accent);color:#fff;padding:10px 12px;border-radius:8px;border:0;font-weight:700}
+    footer{margin-top:36px;padding:26px 0;color:var(--muted);font-size:0.9rem}
+    .socials{display:flex;gap:10px}
+    /* responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;padding:20px 0}
+      .contact{grid-template-columns:1fr}
+      nav ul{display:none}
+      .mobile-toggle{display:inline-block}
+    }
+    .mobile-toggle{display:none;background:none;border:0;font-size:1.2rem}
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <!-- Reemplazar con el logo oficial de Claro -->
+        <img src="https://via.placeholder.com/160x40?text=CLARO" alt="Claro Colombia - logo" />
+        <div>
+          <strong>Claro Colombia</strong>
+          <div style="font-size:0.8rem;color:var(--muted)">Telecomunicaciones y soluciones digitales</div>
+        </div>
+      </div>
+
+      <nav>
+        <button class="mobile-toggle" aria-controls="main-nav" aria-expanded="false">☰</button>
+        <ul id="main-nav">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#empresas">Empresas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a class="cta" href="#contacto">Contrata ahora</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Conéctate al futuro con Claro Colombia</h1>
+        <p>Internet de alta velocidad, telefonía móvil con cobertura nacional y entretenimiento para toda la familia. Soluciones empresariales a medida para impulsar tu negocio.</p>
+        <div style="display:flex;gap:12px;margin-top:12px">
+          <a class="cta" href="#planes">Ver planes</a>
+          <a href="#empresas" style="align-self:center;color:var(--muted);text-decoration:none">Soluciones para empresas →</a>
+        </div>
+
+        <div class="card features" aria-label="Características principales">
+          <div class="feature">
+            <strong>Velocidad garantizada</strong>
+            <div style="color:var(--muted);font-size:0.95rem">Fibra óptica y 4G/5G para navegar sin interrupciones.</div>
+          </div>
+          <div class="feature">
+            <strong>Soporte 24/7</strong>
+            <div style="color:var(--muted);font-size:0.95rem">Atención rápida vía chat, teléfono y centros de servicio.</div>
+          </div>
+          <div class="feature">
+            <strong>Paquetes familiares</strong>
+            <div style="color:var(--muted);font-size:0.95rem">Combina internet + TV + móvil y ahorra en tu factura.</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card" aria-labelledby="promo-title">
+        <h2 id="promo-title">Promoción limitada</h2>
+        <p style="color:var(--muted)">Obtén instalación gratuita y 50% de descuento los 3 primeros meses en planes de fibra seleccionados.</p>
+        <div style="margin-top:12px">
+          <strong>Desde</strong>
+          <div class="price">$39.900 COP / mes</div>
+          <div style="font-size:0.85rem;color:var(--muted);margin-top:8px">(Precio ilustrativo — reemplazar por valores oficiales)</div>
+        </div>
+        <a href="#contacto" style="display:inline-block;margin-top:12px" class="cta">Solicitar instalación</a>
+      </aside>
+    </section>
+
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <div class="plans">
+        <article class="plan card">
+          <h3>Internet Hogar</h3>
+          <div style="color:var(--muted)">Fibra óptica simétrica, Wi‑Fi 6 y soporte técnico.</div>
+          <div style="margin-top:12px"><strong>Ideal para:</strong> streaming, teletrabajo y gaming.</div>
+        </article>
+
+        <article class="plan card">
+          <h3>Móvil</h3>
+          <div style="color:var(--muted)">Planes pospago y prepago con 4G/5G y roaming.</div>
+          <div style="margin-top:12px"><strong>Beneficios:</strong> minutos ilimitados, datos compartidos.</div>
+        </article>
+
+        <article class="plan card">
+          <h3>TV y entretenimiento</h3>
+          <div style="color:var(--muted)">Canales HD, On Demand y apps incluidas.</div>
+          <div style="margin-top:12px"><strong>Incluye:</strong> set‑top box y control parental.</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="planes" style="margin-top:18px">
+      <h2>Planes destacados</h2>
+      <div class="plans">
+        <div class="plan card">
+          <h3>Básico Fibra 100 Mbps</h3>
+          <div class="price">$39.900 COP</div>
+          <ul style="color:var(--muted);padding-left:18px">
+            <li>100 Mbps simétricos</li>
+            <li>Wi‑Fi incluida</li>
+            <li>Instalación gratis (promoción)</li>
+          </ul>
+          <a class="cta" href="#contacto" style="display:inline-block;margin-top:10px">Contratar</a>
+        </div>
+
+        <div class="plan card">
+          <h3>Avanzado Fibra 300 Mbps</h3>
+          <div class="price">$69.900 COP</div>
+          <ul style="color:var(--muted);padding-left:18px">
+            <li>300 Mbps simétricos</li>
+            <li>Router Wi‑Fi 6</li>
+            <li>Soporte prioritario</li>
+          </ul>
+          <a class="cta" href="#contacto" style="display:inline-block;margin-top:10px">Contratar</a>
+        </div>
+
+        <div class="plan card">
+          <h3>Full Hogar (Internet + TV)</h3>
+          <div class="price">$109.900 COP</div>
+          <ul style="color:var(--muted);padding-left:18px">
+            <li>500 Mbps + TV HD</li>
+            <li>Apps de streaming incluidas</li>
+            <li>Descuento familiar</li>
+          </ul>
+          <a class="cta" href="#contacto" style="display:inline-block;margin-top:10px">Contratar</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="empresas" style="margin-top:18px">
+      <h2>Soluciones para empresas</h2>
+      <div class="card" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div>
+          <h3>Conectividad empresarial</h3>
+          <p style="color:var(--muted)">Conexiones dedicadas, VPN y enlaces redundantes para garantizar disponibilidad.</p>
+        </div>
+        <div>
+          <h3>IoT y Cloud</h3>
+          <p style="color:var(--muted)">Plataformas IoT gestionadas, monitoreo y soluciones de analítica.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" style="margin-top:18px">
+      <h2>Contacto</h2>
+      <div class="contact">
+        <div class="card">
+          <h3>Háblanos</h3>
+          <p style="color:var(--muted)">Completa el formulario y un asesor se comunicará contigo.</p>
+          <form id="contactForm">
+            <label for="name">Nombre completo</label>
+            <input id="name" name="name" required />
+
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="service">Interés</label>
+            <select id="service" name="service">
+              <option>Internet Hogar</option>
+              <option>Móvil</option>
+              <option>TV</option>
+              <option>Soluciones Empresas</option>
+            </select>
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <div style="display:flex;gap:8px;margin-top:10px">
+              <button type="submit">Enviar</button>
+              <button type="reset" style="background:#eee;color:var(--dark);font-weight:600">Limpiar</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="card">
+          <h3>Atención</h3>
+          <p style="color:var(--muted)">Línea nacional: <strong>01 8000 XXX XXX</strong><br>Soporte técnico: <strong>*611</strong> (desde Claro)</p>
+          <p style="margin-top:8px;color:var(--muted)"><strong>Dirección:</strong> Bogotá, Colombia (Reemplazar por dirección oficial)</p>
+          <div style="margin-top:8px">
+            <strong>Horario</strong>
+            <div style="color:var(--muted)">Lun–Dom: 7:00 – 22:00</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          © Claro Colombia — Página ejemplo. Reemplaza textos, precios y contactos por datos oficiales antes de publicar.
+        </div>
+        <div class="socials">
+          <span aria-hidden>🔗</span>
+          <a href="#">Facebook</a>
+          <a href="#">X</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.mobile-toggle');
+    const nav = document.getElementById('main-nav');
+    if(toggle){
+      toggle.addEventListener('click', ()=>{
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        if(nav.style.display === 'flex') nav.style.display = '';
+        else nav.style.display = 'flex';
+      });
+    }
+
+    // Simulación de envío de formulario (reemplazar con integración real)
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const name = form.name.value.trim();
+      if(!name){ alert('Por favor ingresa tu nombre.'); return; }
+      alert('Gracias, ' + name + '. Hemos recibido tu solicitud y pronto un asesor se comunicará contigo.');
+      form.reset();
+    });
+  </script>
+  <script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+	webhookUrl: 'https://susanna-overcold-nonblindingly.ngrok-free.dev/webhook/86fc02b2-25ed-4778-8e68-c3e0bbd8a271/chat',
+	webhookConfig: {
+		method: 'POST',
+		headers: {}
+	},
+	target: '#n8n-chat',
+	mode: 'window',
+	chatInputKey: 'chatInput',
+	chatSessionKey: 'sessionId',
+	loadPreviousSession: true,
+	metadata: {},
+	showWelcomeScreen: false,
+	defaultLanguage: 'en',
+	initialMessages: [
+		'Hi there! 👋',
+		'My name is Steve Jobs. How can I assist you today?'
+	],
+	i18n: {
+		en: {
+			title: 'Hi there! 👋',
+			subtitle: "Start a chat. We're here to help you 24/7.",
+			footer: '',
+			getStarted: 'New Conversation',
+			inputPlaceholder: 'Type your question..',
+		},
+	},
+	enableStreaming: false,
+});
+</script>
+</body>
+</html>
