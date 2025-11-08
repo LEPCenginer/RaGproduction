@@ -43,6 +43,71 @@
     .mobile-toggle{display:none;background:none;border:0;font-size:1.2rem}
   </style>
   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <style>
+    :root {
+        /* Tema oscuro con acentos azules */
+        --chat--color--primary: #007FFF;  /* Azul brillante */
+        --chat--color--primary-shade-50: #0066CC;  /* Azul medio */
+        --chat--color--primary--shade-100: #004C99;  /* Azul oscuro */
+        --chat--color--secondary: #00D4FF;  /* Azul cyan */
+        --chat--color-secondary-shade-50: #00BFFF;
+        --chat--color-white: #ffffff;
+        --chat--color-light: #E6F3FF;  /* Azul muy claro */
+        --chat--color-light-shade-50: #CCE6FF;
+        --chat--color-light-shade-100: #B3D9FF;
+        --chat--color-medium: #666666;
+        --chat--color-dark: #1A1A1A;  /* Casi negro */
+        --chat--color-disabled: #4D4D4D;
+        --chat--color-typing: #808080;
+
+        /* Espaciado y bordes */
+        --chat--spacing: 1.2rem;
+        --chat--border-radius: 0.5rem;  /* Bordes más redondeados */
+        --chat--transition-duration: 0.2s;
+
+        /* Dimensiones de la ventana */
+        --chat--window--width: 380px;
+        --chat--window--height: 600px;
+
+        /* Encabezado */
+        --chat--header-height: auto;
+        --chat--header--padding: 1.2rem;
+        --chat--header--background: #F0F8FF !important;  /* Azure - azul muy claro */
+        --chat--header--color: #333333 !important;  /* Texto negro */
+        --chat--header--border-top: none;
+        --chat--header--border-bottom: 1px solid #CCE6FF;
+        --chat--heading--font-size: 1.5em;
+        --chat--subtitle--font-size: 0.9em;
+        --chat--subtitle--line-height: 1.6;
+
+        /* Área de texto */
+        --chat--textarea--height: 55px;
+        --chat--textarea--background: #F5F5F5;  /* Gris muy claro para el área de texto */
+
+        /* Mensajes */
+        --chat--message--font-size: 0.95rem;
+        --chat--message--padding: 1rem 1.2rem;
+        --chat--message--border-radius: 1rem;
+        --chat--message-line-height: 1.6;
+        /* Mensajes del bot */
+        --chat--message--bot--background: #FFE082 !important;  /* Amarillo cálido */
+        --chat--message--bot--color: #333333 !important;  /* Texto gris oscuro */
+        --chat--message--bot--border: none !important;
+        /* Mensajes del usuario */
+        --chat--message--user--background: var(--chat--color--primary);  /* Fondo azul */
+        --chat--message--user--color: var(--chat--color-white);  /* Texto blanco */
+        --chat--message--user--border: none;
+        --chat--message--pre--background: #262626;  /* Código con fondo gris oscuro */
+
+        /* Botón de toggle */
+        --chat--toggle--background: var(--chat--color--primary);
+        --chat--toggle--hover--background: var(--chat--color--primary-shade-50);
+        --chat--toggle--active--background: var(--chat--color--primary--shade-100);
+        --chat--toggle--color: var(--chat--color-white);
+        --chat--toggle--size: 60px;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 </head>
 <body>
   <header>
